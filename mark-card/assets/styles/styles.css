@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(218, 237, 255);
+}
+main{
+    width: 40%;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 0px;
+}
+.blue{
+    background: linear-gradient(to top, rgb(43, 43, 252), rgb(86, 86, 239));
+    width: 50%;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+}
+.circle{
+    margin-top: 2rem;
+    width: 70%;
+    background: linear-gradient(to top, rgba(61, 61, 254, 0), rgb(64, 1, 182));
+    border-radius: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle h1{
+    font-size: 5rem;
+}
+.text{
+    margin-top: 2rem;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+.text p{
+    margin-top: 1rem;
+}
+.white{
+   color: black; 
+   padding: 30px 30px;
+   width: 50%;
+}
+.white h3{
+    color: rgb(101, 100, 100);
+}
+.row{
+    width: 100%;
+    padding: 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.left{
+    display: flex;
+    /* background-color: rebeccapurple; */
+}
+.left p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.right{
+    text-align: right;
+    /* background-color: red; */
+    color: rgb(0, 0, 0);
+}
+span{
+    font-weight: bold;
+}
+#red{
+    background-color: rgba(255, 0, 0, 0.144);
+    color: red;
+}
+#yellow{
+    background-color: rgba(255, 225, 0, 0.056);
+    color: rgb(223, 164, 0);
+}
+#green{
+    background-color: rgba(0, 128, 0, 0.062);
+    color: green;
+}
+#blue{
+    background-color: rgba(0, 0, 255, 0.078);
+    color: blue;
+}
+.button{
+    width: 100%;
+    padding-top: 40px;
+}
+.button button{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(40, 44, 59);
+    color: white;
+    font-size: 1rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        display: block;
+        width: 100% !important;
+        margin-top: 0;
+    }
+    .blue{
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .white{
+        width: 100%;
+        padding: 0rem 2rem;
+        margin-top: 1rem;
+    }
+}
