@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+main{
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 0px auto;
+    margin-top: 10rem;
+    width: 35%;
+    display: flex;
+    gap: 25px;
+    background-color: white;
+}
+.left{
+    width: 50%;  
+}
+.image{
+    width: 100%;
+}
+.image img{
+    width: 100%;
+
+}
+.right{
+    width: 50%;
+    padding-top: 0rem;
+}
+.price{
+    display: flex;
+    gap: 15px;
+}
+#top-p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.right p{
+    margin-top: 1rem;
+    width: 90%;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.right h2{
+    font-size: 2.5rem;
+    width: 90%;
+    line-height: 1;
+    margin-top: 1rem;
+}
+.price h2{
+    width: fit-content;
+}
+#strikeoff{
+    padding-top: 0.5rem;
+    text-decoration: line-through;
+}
+.cart-button{
+    width: 90%;
+    text-align: center;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(4, 150, 101);
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+#price-main{
+    color: rgb(4, 150, 101);
+}
+.attribution{
+    margin-top: 1rem;
+}
