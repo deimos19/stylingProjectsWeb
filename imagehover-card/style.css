@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Outfit';
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+.container{
+    padding: 20px 20px;
+    width: 310px;
+}
+.heading h2:hover{
+    color: hsl(178, 100%, 50%) !important;
+    cursor: pointer;
+}
+.card{
+    width: fit-content;
+    background-color: hsl(216, 50%, 16%);
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.image {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden by default */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.overlay .eye-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.image:hover .overlay {
+    background-color: hsla(178, 100%, 50%, 0.39); /* Black overlay on hover */
+    opacity: 1; /* Show overlay */
+}
+
+.image:hover .overlay .eye-icon {
+    opacity: 1; /* Show eye icon */
+}
+
+
+.heading{
+    margin-top: 1rem;
+}
+.para p{
+    /* background-color: bisque; */
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%) !important;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+.col{
+    display: flex;
+    gap: 5px;
+}
+#col1{
+    color: hsl(178, 100%, 50%) !important;
+    font-weight: 400;
+}
+#col2{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+
+footer{
+    margin-top: 0.6rem;
+    display: flex;
+    gap: 15px;
+    height: fit-content;
+    align-items: center;
+}
+footer img{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.footer-text{
+    text-align: center;
+}
+.footer-text p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: hsl(178, 100%, 50%) !important;
+    cursor: pointer;
+}
+.hr {
+    border: none;
+    height: 1px; 
+    background-color: #3c595d;
+}
