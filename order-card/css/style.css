@@ -63,7 +63,7 @@ button{
     height: 2.5rem;
     margin-top: 0.5rem;
     cursor: pointer;
-    background-color: blue;
+    background-color: hsl(245, 75%, 52%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -72,11 +72,17 @@ button{
     font-size: 1rem;
     font-weight: bold;
 }
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
 #plain-btn{
     background: none;
     border: none;
-    color: black;
+    color: hsl(224, 23%, 55%);
     box-shadow: none;
+}
+#plain-btn:hover{
+    color: hsl(223, 47%, 23%);
 }
 .plan{
     text-align: left;
@@ -89,6 +95,9 @@ button{
 a{
     font-weight: bold;
     color: hsl(223, 47%, 23%);
+}
+a:hover{
+    color: hsl(224, 23%, 55%);
 }
 .attribution{
     margin-top: 2rem;
