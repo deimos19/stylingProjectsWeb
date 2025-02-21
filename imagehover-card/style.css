@@ -21,6 +21,7 @@ body{
     background-color: hsl(216, 50%, 16%);
     margin: 100px auto;
     border-radius: 10px;
+    box-shadow: 0 16px 16px hsl(0, 0%, 7%);
 }
 .image {
     width: 100%;
@@ -40,29 +41,29 @@ body{
 .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: background-color 0.3s ease, opacity 0.3s ease;
     border-radius: 10px;
 }
 
 .overlay .eye-icon {
-    width: 40px; /* Adjust size as needed */
+    width: 40px;
     height: 40px;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .image:hover .overlay {
-    background-color: hsla(178, 100%, 50%, 0.39); /* Black overlay on hover */
-    opacity: 1; /* Show overlay */
+    background-color: hsla(178, 100%, 50%, 0.39);
+    opacity: 1;
 }
 
 .image:hover .overlay .eye-icon {
-    opacity: 1; /* Show eye icon */
+    opacity: 1;
 }
 
 
@@ -70,7 +71,6 @@ body{
     margin-top: 1rem;
 }
 .para p{
-    /* background-color: bisque; */
     margin-top: 1rem;
     font-size: 16px;
     font-weight: 400;
